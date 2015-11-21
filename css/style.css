@@ -1,40 +1,64 @@
 body {
     background-color: LightGray;
+    font-family: 'Roboto', sans-serif;
 }
 div {
-    border: 1px solid white;
+    border: .1em solid white;
 }
-/* Navigation Section */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Top Navigation Section */
 .topnav { 
 	background-color: #fff;
     } 
+.logo {
+	padding: 0em 0em;
+	margin: 0 auto;
+}
+.topnav .links a:hover {
+	cursor: pointer;
+	color: blue;
+}
+ /* a { } is also okay but would apply to all links and not just links within the header */
+.topnav .content {
+	padding: 1em;	
+	margin: 0;
+	vertical-align: baseline;
+}
 .topnav .links {
 	float: right;
 	font-family: 'Roboto';
 	color: #838994;
-	font-size: 16px;
-	margin-top: 25px;
-	}
-.topnav .links li {
-	display: inline-block;
+	font-size: .9em;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/*.topnav .links li {
+	display: inline-block; 
+	width: 5px;
 	margin-left: 25px;
 	}
-	
-/*.topnav .links li:hover {
-	cursor: pointer;
-	color #33333;
-	}
-
-/*.topnav .content { 
-	width: 970 px;
-	height: 70 px;
-	margin: 0 auto;  
-	} 
-links {  
+*/
+.links > li {  
     text-decoration: none; 
-    display: inline-block;
-    padding: .2em 1em; 
+    display: inline;
+    width: 20em; /*only applies for inline-block or block elements*/
+    padding: .8em;
+    margin: 0;
+    vertical-align: baseline;
     color: #A8A8A8;
     background-color: #FFFFFF;
-    } 
-
+    text-align: -webkit-match-parent;
+ } 
+ .links a {
+ 	text-decoration: none;
+ }
+ ul {
+ 	list-style: none;
+ }
