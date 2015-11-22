@@ -62,3 +62,38 @@ html {
  ul {
  	list-style: none;
  }
+
+ /* Body Section */
+ .introduction {
+ 	background-image: url('../first-background.jpg');
+ 	background-position: center bottom;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	overflow: auto;
+ 	height: 45.938rem;
+ }
+ .introduction h1 {
+ 	margin-top: 10rem;
+ }
+ .introduction h1,
+ .introduction h3 {
+ 	color: white;
+ 	text-align: center;
+ 	font-weight: 100;
+ }
+ .introduction button {
+ 	margin-right: auto;
+ 	margin-left: auto;
+ 	display: block;
+ 	background-color: #f15a29;
+ 	border-color: #f15a29;
+ 	width: 9rem;
+ 	padding: 1rem 1.5rem;
+ 	color: white;
+ 	font-size: 1.25rem;
+ 	text-align: center;
+ 	border-radius: 5px;
+ }
+ .introduction div {
+ 	border:none;
+ }
