@@ -63,14 +63,14 @@ html {
  	list-style: none;
  }
 
- /* Body Section */
+ /* Body Section - introduction*/
  .introduction {
  	background-image: url('../first-background.jpg');
  	background-position: center bottom;
  	background-repeat: no-repeat;
  	background-size: cover;
  	overflow: auto;
- 	height: 45.938rem;
+ 	height: 35rem;
  }
  .introduction h1 {
  	margin-top: 10rem;
@@ -94,6 +94,41 @@ html {
  	text-align: center;
  	border-radius: 5px;
  }
- .introduction div {
+.introduction div {
  	border:none;
  }
+ /* Body Section - cases */
+ .cases {
+ 	background-color: white;
+ 	overflow: hidden;
+ 	color: #1d1e21;
+ }
+/* when I look at the site with Chrome Developer, it says that it is div.content... why not section.cases?*/
+ .content h2 {
+ 	display: block;
+ 	font-size: 3rem;
+ 	font-weight: 300;
+ 	margin: 1.625rem 0 3.125rem;
+ 	text-align: center;
+ }
+.devices > li {
+	width: 30%; /*why when I sawy 33%, it moves it to the next line*/
+ 	display: inline-block;
+ 	border: none;
+ 	height: 4em;
+ 	margin-top: 20px;
+ 	margin-bottom:150px;
+ }
+ .devices li img {
+ 	margin-left: 20%;
+ }
+/*having trouble centering device image - I resorted to just setting a margin left but this feels a bit hacky and not precise
+.devices img {
+	margin: auto;
+}
+*/
+.caption {
+	border: none;
+	display: block;
+	text-align: center;
+}
